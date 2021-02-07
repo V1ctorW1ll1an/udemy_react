@@ -1,0 +1,25 @@
+.Card {
+  $block_name: #{&};
+  border: 2px solid #999;
+  border-radius: 10px;
+  margin: 50px;
+  overflow: hidden;
+  min-width: 300px;
+  box-shadow: 1px 1px 0px #999, 2px 2px 0px #999, 3px 3px 0px #999, 4px 4px 0px #999, 5px 5px 0px #999, 6px 6px 0px #999;
+
+  #{$block_name}__title {
+    display: grid;
+    place-items: center;
+    padding: 10px 0;
+    color: rgb(41, 40, 40);
+  }
+
+  #{$block_name}__content {
+    font-size: 16px;
+    padding: 30px;
+    background-color: #fff;
+    color: rgb(70, 59, 59);
+    flex: 1;
+    height: 100%;
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function primeiro () {
-  const welcome = "seja bem vindo!"
+  const welcome = 'seja bem vindo!'
   return (
     <div>
       <h2>
