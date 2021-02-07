@@ -1,6 +1,7 @@
 import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro'
 import RandomNumber from './components/basicos/RandomNumber'
+import FamiliaMembro from './components/basicos/FamiliaMembro'
 import Familia from './components/basicos/Familia'
 import Card from './components/layout/Card'
 import './App.scss'
@@ -23,6 +24,14 @@ export default class App extends Component {
         </header>
 
         <div className="cards__container">
+          <Card title="#04 Membros" customStyle={customStyle('#EB9486')}>
+            <Familia sobrenome="Silva" >
+              <FamiliaMembro nome="Joao" />
+              <FamiliaMembro nome="Pedro" />
+              <FamiliaMembro nome="Matheus" />
+            </Familia>
+          </Card>
+
           <Card title="#03 Desafio aleatorio" customStyle={customStyle('#CAE7B9')}>
             <RandomNumber min={1} max={50} />
             <RandomNumber min={1} max={50} />
@@ -43,9 +52,6 @@ export default class App extends Component {
             <Primeiro />
           </Card>
 
-          <Card title="#01 Primeiro" customStyle={customStyle('#EB9486')}>
-            <Familia sobrenome="Ferreira" />
-          </Card>
         </div>
 
       </div>
