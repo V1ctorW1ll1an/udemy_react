@@ -1,0 +1,21 @@
+.TabelaProdutos {
+  $block_name: #{&};
+  padding-bottom: 50px;
+
+  table {
+    width: 100%;
+
+    th {
+      background-color: #4223cc;
+      color: #fdfdfd;
+    }
+  }
+
+  .par {
+    background-color: #c9c1c1;
+  }
+
+  .impar {
+    background-color: #eee2e2;
+  }
+}
